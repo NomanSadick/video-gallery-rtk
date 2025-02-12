@@ -16,7 +16,7 @@ interface VideoProps {
 
 export default function Video({ video }: VideoProps) {
   const { id, title, duration, author, views, date, thumbnail } = video;
-  console.log(video);
+  // console.log(video);
 
   return (
     <div className="w-full mx-auto flex justify-center items-center">

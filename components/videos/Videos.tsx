@@ -20,7 +20,7 @@ interface VideoType {
 export default function Videos() {
   // Fetch videos using RTK Query
   const { data: videos, isLoading, isError } = useGetVideosQuery({});
-  console.log(videos);
+  // console.log(videos);
   // Decide what to render
   let content = null;
   if (isLoading) {

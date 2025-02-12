@@ -12,7 +12,7 @@ export const apiSlice = createApi({
     }),
     // Fetch a specific video by ID
     getVideoById: builder.query({
-      query: (id) => `/videos/${id}`, // Endpoint to fetch video by ID
+      query: (videoId) => `/videos/${videoId}`, // Endpoint to fetch video by ID
     }),
   }),
 });
