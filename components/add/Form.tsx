@@ -1,6 +1,8 @@
 "use client";
-import TextArea from "./ui/TextArea";
-import TextInput from "./ui/TextInput";
+
+import TextArea from "../ui/TextArea";
+import TextInput from "../ui/TextInput";
+
 
 
 export default function Form() {

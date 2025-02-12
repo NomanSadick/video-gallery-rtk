@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/images/author.png"; // Assuming the image is in the 'public' folder or properly imported
+import logo from "../public/images/logo.png"; // Assuming the image is in the 'public' folder or properly imported
 
 const Navigation: React.FC = () => {
   return (
@@ -10,8 +10,9 @@ const Navigation: React.FC = () => {
           <Image
             src={logo}
             alt="Learn with Sumit"
-            width={40}  
-            height={40} 
+            width={400}  
+            height={400} 
+            className="w-full h-auto"
           />
         </Link>
         <Link
