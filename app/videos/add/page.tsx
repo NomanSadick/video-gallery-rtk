@@ -1,5 +1,5 @@
 "use client";
-import AddVideo from "@/components/edit/EditVideo";
+import AddVideo from "@/components/add/AddVideo";
 
 export default function Add() {
     return (
