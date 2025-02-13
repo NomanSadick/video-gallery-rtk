@@ -14,8 +14,16 @@ export const apiSlice = createApi({
     getVideoById: builder.query({
       query: (videoId) => `/videos/${videoId}`, // Endpoint to fetch video by ID
     }),
+    getRelatedVideos: builder.query({
+      query: ({ id, title }) => {
+        const tags = title.split(" ");
+        const likes = tags.map((tag) => `title_like=${tag}`);
+        const queryString = `/videos?${likes.join("&")}&_limit=4`;
+        return queryString;
+      },
+    }),
   }),
 });
 
 // Export hooks for both queries
-export const { useGetVideosQuery, useGetVideoByIdQuery } = apiSlice;
+export const { useGetVideosQuery, useGetVideoByIdQuery, useGetRelatedVideosQuery } = apiSlice;

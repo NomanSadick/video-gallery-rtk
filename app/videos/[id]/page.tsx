@@ -58,7 +58,7 @@ const VideoDetail = () => {
               <Description video={video} />
             </>
           </div>
-          <RelatedVideos />
+          <RelatedVideos id={video.id} title={video.title}/>
         </div>
       </div>
     </section>
