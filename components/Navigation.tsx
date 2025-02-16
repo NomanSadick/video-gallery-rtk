@@ -5,11 +5,11 @@ import logo from "../public/images/logo.png"; // Assuming the image is in the 'p
 const Navigation: React.FC = () => {
   return (
     <nav className="bg-slate-200 shadow-md w-full mx-auto flex justify-center items-center">
-      <div className=" w-[80%] px-5 lg:px-0 flex justify-between py-3 items-center">
+      <div className="w-full md:w-[80%] px-5 lg:px-0 flex justify-between py-3 items-center">
         <Link href="/">
           <Image
             src={logo}
-            alt="Learn with Sumit"
+            alt="Noman Sadick"
             width={400}  
             height={400} 
             className="w-full h-auto"

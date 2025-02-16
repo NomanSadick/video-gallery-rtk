@@ -22,8 +22,15 @@ export const apiSlice = createApi({
         return queryString;
       },
     }),
+    addVideo: builder.mutation({
+      query: (data) => ({
+        url: `/videos`,
+        method: 'POST',
+        body: data,
+      }), // Endpoint to fetch video by ID
+    }),
   }),
 });
 
 // Export hooks for both queries
-export const { useGetVideosQuery, useGetVideoByIdQuery, useGetRelatedVideosQuery } = apiSlice;
+export const { useGetVideosQuery, useGetVideoByIdQuery, useGetRelatedVideosQuery, useAddVideoMutation } = apiSlice;

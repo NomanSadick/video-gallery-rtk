@@ -24,7 +24,7 @@ export default function Videos() {
   // Decide what to render
   let content = null;
   if (isLoading) {
-    content = (
+    content = ( 
       <>
         <VideoLoader />
       </>
