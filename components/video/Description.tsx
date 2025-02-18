@@ -4,7 +4,7 @@ import editImage from "../../public/images/edit.svg";
 import Image from "next/image";
 
 export default function Description({video}) {
-  console.log(video);
+  // console.log(video);
   const {title, date, id, description} = video;
   return (
     <div>

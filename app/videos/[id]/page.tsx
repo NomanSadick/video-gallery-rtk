@@ -13,7 +13,7 @@ import Error from "@/components/ui/Error";
 const VideoDetail = () => {
   const params = useParams();
   const videoId = params?.id as string; // ✅ `id` কে `string` হিসেবে কনভার্ট করা হচ্ছে
-  console.log("Video ID:", videoId);
+  // console.log("Video ID:", videoId);
   const {
     data: video,
     isLoading,
@@ -21,7 +21,7 @@ const VideoDetail = () => {
     // error,
     // error,
   } = useGetVideoByIdQuery(videoId);
-  console.log("Fetched Video Data:", video);
+  // console.log("Fetched Video Data:", video);
 
   // console.log(error);
 
