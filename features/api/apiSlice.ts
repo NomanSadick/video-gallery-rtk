@@ -48,9 +48,16 @@ export const apiSlice = createApi({
         { type: "Video", id: arg.id },
         { type: "RelatedVideos", id: arg.id },
     ], // Endpoint to fetch video by ID
-  })
+  }),
+  deleteVideo: builder.mutation({
+    query: (id) => ({
+        url: `/videos/${id}`,
+        method: "DELETE",
+    }),
+    invalidatesTags: ["Videos"],
+}),
   }),
 });
 
 // Export hooks for both queries
-export const { useGetVideosQuery, useGetVideoByIdQuery, useGetRelatedVideosQuery, useEditVideoMutation, useAddVideoMutation } = apiSlice;
+export const { useGetVideosQuery, useGetVideoByIdQuery, useGetRelatedVideosQuery, useEditVideoMutation, useAddVideoMutation, useDeleteVideoMutation } = apiSlice;
